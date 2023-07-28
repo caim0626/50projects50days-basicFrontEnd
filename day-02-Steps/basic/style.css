@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.line {
+  margin: 0 auto;
+  background-color: rgb(224, 224, 224);
+  height: 3.5px;
+  /* border-bottom: 4px solid rgb(224, 224, 224); */
+  width: 70px;
+  transition: all 0.5s;
+}
+
+.line-toblue-toright {
+  background-color: linear-gradient(
+    to right,
+    rgb(224, 224, 224),
+    rgb(52, 152, 219)
+  );
+}
+
+.line-toblue-toleft {
+  background-color: linear-gradient(
+    to left,
+    rgb(224, 224, 224),
+    rgb(52, 152, 219)
+  );
+}
+
+.step {
+  border-radius: 50%;
+  border: solid rgb(224, 224, 224);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.step.step-1 {
+  border: solid rgb(52, 152, 219);
+}
+
+.step-button {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 70px;
+  height: 30px;
+  border: hidden;
+  color: white;
+  border-radius: 4px;
+}
+
+.button-prev {
+  cursor: not-allowed;
+}
+
+.button-next {
+  cursor: pointer;
+  background-color: rgb(52, 152, 219);
+}
