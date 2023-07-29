@@ -10,3 +10,5 @@ This is a project for me to practice Basic front-end skills: HTML, CSS, JS
 
 - use flex blocks to align the pictures in one row.
 - click pictures, each one will expand with the CSS transition
+
+## day-02-Steps

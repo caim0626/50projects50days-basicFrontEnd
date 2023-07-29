@@ -1,0 +1,32 @@
+<style>
+  .grandfather {
+    position: relative; /* 祖父元素设置为相对定位 */
+    width: 500px;
+    height: 400px;
+    background-color: #cccccc;
+  }
+
+  .father {
+    position: absolute; /* 父元素设置为绝对定位 */
+    top: 50px; /* 距离祖父元素顶部的距离 */
+    left: 50px; /* 距离祖父元素左侧的距离 */
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+  }
+
+  .son {
+    position: absolute; /* 子元素设置为绝对定位 */
+    top: 30px; /* 距离父元素顶部的距离 */
+    left: 30px; /* 距离父元素左侧的距离 */
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+  }
+</style>
+
+<div class="grandfather">
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</div>
