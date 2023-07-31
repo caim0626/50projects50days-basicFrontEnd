@@ -12,3 +12,5 @@ This is a project for me to practice Basic front-end skills: HTML, CSS, JS
 - click pictures, each one will expand with the CSS transition
 
 ## day-02-Steps
+
+## day-03-rotaing-navigation-animation

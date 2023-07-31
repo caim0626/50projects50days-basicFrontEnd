@@ -1,0 +1,141 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  font-family: "Lato", sans-serif;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  /* height: 100vh; */
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #333;
+  color: #222;
+}
+
+.container {
+  background-color: #fafafa;
+  width: 100vw;
+  min-height: 100vh;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  padding: 50px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.container.show-nav + nav li {
+  transform: translate(0);
+  transition-delay: 0.3s;
+}
+
+.context-container {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.container h1 {
+  margin: 0;
+}
+
+.context-container small {
+  color: #555;
+  font-style: italic;
+}
+
+.context-container p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.context-container img {
+  max-width: 100%;
+}
+
+/* whats the different when we dont use menu-container and put all the css-code into menu */
+.menu-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.menu {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.menu button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.menu button:focus {
+  outline: none;
+}
+
+.menu button#open {
+  left: 60%;
+}
+
+.menu button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  z-index: -100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+.container.show-nav .menu {
+  transform: rotate(-70deg);
+}
