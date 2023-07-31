@@ -14,3 +14,5 @@ This is a project for me to practice Basic front-end skills: HTML, CSS, JS
 ## day-02-Steps
 
 ## day-03-rotaing-navigation-animation
+
+## day-04-hidden-search-widget
