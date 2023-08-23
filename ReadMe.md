@@ -18,3 +18,5 @@ This is a project for me to practice Basic front-end skills: HTML, CSS, JS
 ## day-04-hidden-search-widget
 
 ## day-05-blurry-loading
+
+## day-06-scroll-animation

@@ -13,11 +13,17 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+      import cfg from "./tailwind.config.js";
+      tailwind.config = cfg;
+    </script>
     <title>Document</title>
   </head>
-  <body>
-    <h1>Hello</h1>
+  <body class="flex flex-col justify-center items-center h-screen">
+    <h1 class="text-4xl font-bold my-4">Hello</h1>
   </body>
+
   <script src="script.js"></script>
-  <div class=""></div>
 </html>
