@@ -20,3 +20,7 @@ This is a project for me to practice Basic front-end skills: HTML, CSS, JS
 ## day-05-blurry-loading
 
 ## day-06-scroll-animation
+
+## day-07-split-landing
+
+## day-08-form-ware

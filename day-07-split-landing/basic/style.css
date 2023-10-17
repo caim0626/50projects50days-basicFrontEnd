@@ -1,0 +1,125 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+:root {
+  --banner-left-bg-color: rgba(0, 0, 0, 0.8);
+  --banner-right-bg-color: rgba(255, 68, 68, 0.6);
+  --left-btn-color: rgba(43, 43, 43, 1);
+  --right-btn-color: rgba(255, 0, 0, 1);
+  --speed: 1000ms;
+  --hover-width: 75%;
+  --other-width: 25%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  /* overflow: hidden; */
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.banner {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner.left {
+  left: 0;
+  background: url("../src/steam-deck-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--banner-left-bg-color);
+}
+
+.banner.left a.btn:hover {
+  border-color: var(--left-btn-color);
+  background-color: var(--left-btn-color);
+}
+
+.banner.right {
+  right: 0;
+  background: url("../src/NintendoSwitch-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--banner-right-bg-color);
+}
+
+.banner.right a.btn:hover {
+  border-color: var(--right-btn-color);
+  background-color: var(--right-btn-color);
+}
+
+.left-hover .left {
+  width: var(--hover-width);
+}
+
+.left-hover .right {
+  width: var(--other-width);
+}
+
+.right-hover .left {
+  width: var(--other-width);
+}
+
+.right-hover .right {
+  width: var(--hover-width);
+}
+
+.banner,
+/* .banner.left,
+.banner.right, */
+.banner.left::before,
+.banner.right::before {
+  transition: all var(--speed) ease-in-out;
+}
+
+.banner h1 {
+  position: relative;
+  top: 30%;
+  color: #fff;
+  font-size: 40px;
+  height: 40px;
+}
+
+.banner a.btn {
+  position: relative;
+  top: 30%;
+  border: #fff solid 3px;
+  width: 200px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
