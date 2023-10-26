@@ -13,4 +13,78 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #4682b4;
+}
+
+.container {
+  background-color: #2a4e6c;
+  width: 380px;
+  height: 435px;
+  border-radius: 4px;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  width: 100%;
+  color: black;
+  padding: 15px;
+  background-color: #add8e6;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.container a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
 }
