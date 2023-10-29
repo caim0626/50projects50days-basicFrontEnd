@@ -1,0 +1,108 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  margin: pad;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.container {
+}
+
+.title {
+  text-align: center;
+}
+
+.quest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quest h2 {
+  display: inline-block;
+}
+
+.expendBtn {
+  margin-left: 60px;
+}
+
+.answer {
+  display: none;
+}
+
+.faq-toggle {
+  border: 0;
+  font-size: large;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fas {
+  border-radius: 50%;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.fq {
+  border: 1px solid;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+.fq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fq.active::before,
+.fq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 50px;
+  left: 20px;
+  z-index: 0;
+}
+
+.fq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+.fq.active .answer {
+  display: block;
+}
+.fq.active .fa-times {
+  display: flex;
+  background-color: gray;
+  color: #fff;
+}
+.fq.active .fa-chevron-down {
+  display: none;
+}
