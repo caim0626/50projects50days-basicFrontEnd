@@ -1,0 +1,50 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #8e44ad;
+}
+
+.share-list {
+  display: flex;
+}
+
+.share-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+  width: 150px;
+}
+
+.icon {
+  color: #fff;
+  font-size: 45px;
+}
+
+.inc-context {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 100;
+  margin: 0;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.share-show p {
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
