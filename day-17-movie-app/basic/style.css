@@ -1,0 +1,129 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  margin: 0;
+  background-color: var(--primary-color);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 20px;
+}
+
+#searchImg {
+  display: flex;
+  padding: 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  background-color: var(--secondary-color);
+  font-size: 16px;
+}
+
+#searchImg:focus {
+  background-color: var(--primary-color);
+  outline: none;
+}
+
+#searchImg::placeholder {
+  color: #6f73c2;
+  font-size: 16px;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  margin: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.movie .overview p {
+  font-size: 18px;
+}
+
+.overview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  padding: 20px;
+  overflow: hidden;
+  background-color: white;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.title p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.title span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.title span.green {
+  color: lightgreen;
+}
+
+.title span.orange {
+  color: orange;
+}
+
+.title span.red {
+  color: red;
+}
+
+.movie img {
+  width: 100%;
+}
