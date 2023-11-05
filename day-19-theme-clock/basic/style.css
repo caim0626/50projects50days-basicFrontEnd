@@ -1,0 +1,122 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+body.dark-mode {
+  background-color: #333;
+}
+
+.dark-btn {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+body.dark-mode .dark-btn {
+  background-color: white;
+  color: black;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+  position: relative;
+}
+
+.needle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: 0.5s ease;
+  transform-origin: bottom;
+}
+
+.needle.second {
+  height: 100px;
+  content: "";
+  border: 2px solid red;
+  z-index: -1;
+}
+
+.needle.minute {
+  height: 100px;
+  content: "";
+  border: 2px solid black;
+  transform-origin: bottom;
+}
+
+body.dark-mode .needle.minute {
+  border-color: white;
+}
+
+.needle.hour {
+  height: 75px;
+  content: "";
+  border: 2px solid black;
+  transform-origin: bottom;
+}
+
+body.dark-mode .needle.hour {
+  border-color: white;
+}
+
+.center-point {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 2px solid red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+body.dark-mode .center-point {
+  background-color: white;
+}
+
+.time {
+  font-size: 40px;
+  margin: 20px;
+}
+
+body.dark-mode .time {
+  color: white;
+}
+
+.date {
+  color: lightgray;
+}
+
+.circle {
+  display: inline-block;
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+body.dark-mode .circle {
+  background-color: white;
+  color: black;
+}
