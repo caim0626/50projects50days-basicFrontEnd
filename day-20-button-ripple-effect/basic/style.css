@@ -1,0 +1,44 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+}
+
+.clickMe {
+  background-color: #800080;
+  color: white;
+  padding: 20px 30px;
+  border: 0;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.effect {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
