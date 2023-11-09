@@ -23,7 +23,7 @@ function dragOver(e) {
   e.preventDefault();
 }
 
-function dragEnter() {
+function dragEnter(e) {
   e.preventDefault();
   this.classList.add("hovered");
 }

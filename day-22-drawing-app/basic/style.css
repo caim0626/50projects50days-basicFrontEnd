@@ -1,0 +1,49 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#canvas {
+  /* ！！！！ dont do it! will make canvas unwork.
+  width: 800px;
+  height: 700px;
+  */
+  border: 2px solid steelblue;
+}
+
+.toolbox {
+  display: flex;
+  background-color: lightblue;
+  width: 800px;
+  padding: 10px;
+  border: 1 solid blue;
+}
+
+.toolbox > * {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.toolbox > *:last-child {
+  margin-left: auto;
+}
