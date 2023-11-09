@@ -13,4 +13,47 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: #2c3e50;
+}
+
+.kinetic {
+  position: relative;
+}
+
+.kinetic::before,
+.kinetic::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  border: 60px solid transparent;
+  border-bottom-color: white;
+  animation: rotateA 2s linear infinite 0.5s;
+}
+
+.kinetic::after {
+  transform: rotate(90deg);
+  animation: rotateB 2s linear infinite;
+}
+
+@keyframes rotateA {
+  25%,
+  50% {
+    transform: rotate(180deg);
+  }
+  75%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateB {
+  25%,
+  50% {
+    transform: rotate(270deg);
+  }
+  75%,
+  100% {
+    transform: rotate(450deg);
+  }
 }
