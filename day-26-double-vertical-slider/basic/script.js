@@ -4,7 +4,7 @@ const leftslide = document.querySelector(".left-slide");
 const rightslide = document.querySelector(".right-slide");
 const slideLength = document.querySelectorAll(".left-slide div").length;
 
-let activeSlide = 0;
+let activeSlideIdx = 0;
 
 btnDown.addEventListener("click", () => {
   changeSlide("down");
@@ -16,17 +16,17 @@ btnUp.addEventListener("click", () => {
 
 function changeSlide(direction) {
   if (direction === "up") {
-    activeSlide++;
-    if (activeSlide >= slideLength) activeSlide = 0;
+    activeSlideIdx++;
+    if (activeSlideIdx >= slideLength) activeSlideIdx = 0;
   } else if (direction === "down") {
-    activeSlide--;
-    if (activeSlide < 0) activeSlide = slideLength - 1;
+    activeSlideIdx--;
+    if (activeSlideIdx < 0) activeSlideIdx = slideLength - 1;
   }
 
   rightslide.style.transform = `translateY(-${
-    activeSlide * document.body.clientHeight
+    activeSlideIdx * document.body.clientHeight
   }px)`;
   leftslide.style.transform = `translateY(${
-    activeSlide * document.body.clientHeight
+    activeSlideIdx * document.body.clientHeight
   }px)`;
 }
