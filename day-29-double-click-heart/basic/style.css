@@ -1,0 +1,42 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.pic {
+  background: url("https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80")
+    no-repeat center center/cover;
+  width: 300px;
+  height: 450px;
+  cursor: pointer;
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.22), 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+.fas {
+  color: red;
+}
+
+.dbclick-heart {
+  position: absolute;
+  animation: grow linear 0.6s;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
