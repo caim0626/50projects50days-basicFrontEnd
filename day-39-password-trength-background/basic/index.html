@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+      import cfg from "./tailwind.config.js";
+      tailwind.config = cfg;
+    </script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="bg-white p-10 rounded shadow-md text-center">
+      <h1 class="text-3xl">Image Password Stength</h1>
+      <p class="text-sm text-gray-700 my-1">
+        Change the password to see the effect
+      </p>
+      <div class="my-4 text-left">
+        <label for="email">Email:</label>
+        <input
+          class="block border w-full my-1 p-2 rounded"
+          type="text"
+          id="email"
+          placeholder="Enter Email"
+        />
+      </div>
+
+      <div class="my-4 text-left">
+        <label for="email">Password:</label>
+        <input
+          class="block border w-full my-1 p-2 rounded"
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+        />
+      </div>
+      <button
+        type="submit"
+        class="mt-2 w-full py-2 rounded bg-black text-white"
+      >
+        Submit
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <div class=""></div>
+</html>
