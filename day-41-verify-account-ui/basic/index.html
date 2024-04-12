@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+      import cfg from "./tailwind.config.js";
+      tailwind.config = cfg;
+    </script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="verify-conponent flex flex-col text-center items-center border-2 border-black rounded-lg"
+    >
+      <h1 class="font-medium mt-8 text-2xl">Verify Your Account</h1>
+      <p class="text-sm text-gray-700 my-4">
+        We emailed you the six digit code to someone@email.com <br />
+        Enter the code below to confirm your email address.
+      </p>
+
+      <!-- write the new class for the code input, or just wite it with js?(the second one is bad choice, but when i cant come up with the first mothed, maybe do sec-one and fix later) -->
+      <div class="verify-code flex justify-around">
+        <input
+          type="number"
+          placeholder="0"
+          min="0"
+          max="9"
+          class="font-bold text-center text-4xl p-2 border m-2 border-gray-400 valid:border-blue-400 active:border-black rounded shadow-gray-500 shadow-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          required
+        />
+        <input
+          type="number"
+          placeholder="0"
+          min="0"
+          max="9"
+          class="font-bold text-center text-4xl p-2 border m-2 border-gray-400 valid:border-blue-400 active:border-black rounded shadow-gray-500 shadow-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          required
+        />
+        <input
+          type="number"
+          placeholder="0"
+          min="0"
+          max="9"
+          class="font-bold text-center text-4xl p-2 border m-2 border-gray-400 valid:border-blue-400 active:border-black rounded shadow-gray-500 shadow-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          required
+        />
+        <input
+          type="number"
+          placeholder="0"
+          min="0"
+          max="9"
+          class="font-bold text-center text-4xl p-2 border m-2 border-gray-400 valid:border-blue-400 active:border-black rounded shadow-gray-500 shadow-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          required
+        />
+        <input
+          type="number"
+          placeholder="0"
+          min="0"
+          max="9"
+          class="font-bold text-center text-4xl p-2 border m-2 border-gray-400 valid:border-blue-400 active:border-black rounded shadow-gray-500 shadow-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          required
+        />
+        <input
+          type="number"
+          placeholder="0"
+          min="0"
+          max="9"
+          class="font-bold text-center text-4xl p-2 border m-2 border-gray-400 valid:border-blue-400 active:border-black rounded shadow-gray-500 shadow-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          required
+        />
+      </div>
+      <button class="bg-gray-200 my-4 text-gray-600 py-4 px-12 rounded">
+        design only~
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <div class=""></div>
+</html>
