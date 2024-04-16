@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+      import cfg from "./tailwind.config.js";
+      tailwind.config = cfg;
+    </script>
+
+    <title>Document</title>
+  </head>
+  <body class="bg-orange-100">
+    <div
+      class="container bg-white flex justify-center items-center w-96 p-4 rounded-md shadow-md"
+    >
+      <div
+        class="none review-container text-center flex flex-col justify-center items-center"
+      >
+        <h1 class="font-semibold mx-2">
+          How satisfied are you with our customer support performance?
+        </h1>
+        <div class="choice flex justify-center items-center my-4">
+          <div
+            class="p-4 rounded-md select-none cursor-pointer hover:shadow-md"
+          >
+            <img src="../src/sad.png" alt="" />
+            Unhappy
+          </div>
+          <div
+            class="p-4 rounded-md select-none cursor-pointer hover:shadow-md"
+          >
+            <img src="../src/neutral.png" alt="" />
+            Neutral
+          </div>
+          <div
+            class="p-4 rounded-md select-none cursor-pointer hover:shadow-md"
+          >
+            <img src="../src/happiness.png" alt="" />
+            satisfied
+          </div>
+        </div>
+        <button
+          class="btn bg-black text-white px-8 py-2 rounded-md text-sm active:scale-95"
+        >
+          Send Review
+        </button>
+      </div>
+      <div
+        class="response-container p-8 flex flex-col items-center text-center hide"
+      >
+        <i class="fas fa-heart text-3xl text-red-500"></i>
+        <h2 class="m-1">Thank You!</h2>
+        <h2 class="feedback m-1"></h2>
+        <p class="m-1">
+          We'll use your feedback to improve our customer support
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <div class=""></div>
+</html>
