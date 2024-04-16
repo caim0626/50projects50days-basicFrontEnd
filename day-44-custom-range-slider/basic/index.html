@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+      import cfg from "./tailwind.config.js";
+      tailwind.config = cfg;
+    </script>
+
+    <title>Document</title>
+  </head>
+  <body class="bg-blue-200">
+    <h1 class="absolute top-20 text-2xl">Custom Range Slider</h1>
+    <input
+      type="range"
+      id="range"
+      min="0"
+      max="100"
+      class="w-60 h-6 accent-purple-400 outline-none"
+    />
+    <label
+      for="range"
+      class="current-value bg-white text-center w-16 h-6 rounded shadow -translate-y-12"
+      >50</label
+    >
+
+    <!-- bad disign -->
+    <!-- <div
+      class="line-container absolute flex top-80 w-80 h-3 overflow-hidden rounded"
+    >
+      <div class="line-left m-0 p-0 w-1/2 h-full bg-purple-400"></div>
+      <div class="line-right m-0 p-0 w-1/2 h-full bg-white"></div>
+    </div>
+    <div
+      class="current-value absolute select-none top-80 -translate-y-8 w-12 h-6 bg-white rounded shadow text-center"
+    >
+      50
+    </div>
+    <div
+      class="circle absolute top-80 -translate-y-1 w-6 h-6 rounded-full bg-white rounded border border-purple-600"
+    ></div> -->
+  </body>
+  <script src="script.js"></script>
+  <div class=""></div>
+</html>
