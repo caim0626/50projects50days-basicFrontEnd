@@ -1,0 +1,108 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&family=Tapestry&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Playfair Display", sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.line {
+  border: 2px solid white;
+  align-self: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+  animation: 4s linear 0s infinite running progress-bar;
+}
+
+.dialog {
+  background-color: #476ce4;
+  border-radius: 15px;
+  color: white;
+  padding: 50px 80px;
+  max-width: 768px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+
+.fa-quote-right {
+  right: 40px;
+}
+
+.fa-quote-left {
+  left: 40px;
+}
+
+.content {
+  letter-spacing: 5px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  margin: 10px;
+}
+
+#head {
+  border-radius: 50%;
+  background: #000;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.user-details {
+  padding: 10px;
+}
+
+.user-details #name {
+  font-size: 16px;
+  font-weight: 700px;
+}
+
+.user-details #role {
+  margin-top: 10px;
+}
+
+@keyframes progress-bar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+    /* unset properties i.e. 'filter' will revert to default values */
+  }
+}
+
+@media (max-width: 768px) {
+  .dialog {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+}
